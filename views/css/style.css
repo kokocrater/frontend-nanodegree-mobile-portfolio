@@ -30,10 +30,11 @@ form {
 }
 
 .mover {
+  will-change: transform;
+  transform: translateZ(0);
   position: fixed;
   width: 256px;
   z-index: -1;
-  will-change: left;
 }
 
 .randomPizzaContainer {
@@ -50,4 +51,3 @@ form {
  .container {
   background-color: rgba(240, 60, 60, 0.8);
 }
-
