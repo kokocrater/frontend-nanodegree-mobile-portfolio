@@ -1,7 +1,16 @@
 # Website Optimization Project
 
 ## Modifications
-- For 'changePizzaSizes()' and 'updatePositions()', moved all variable declarations and most calculations out of the 'for' loops.  Established 'items' and 'leftPosArray' has global variables so that they could be updated at the initial page load instead of each time 'updatePositions()' is called.  The array 'leftPosArray' is a list of all the initial 'elem.basicLeft' values.
+### index.html
+- Resized and compressed 'img/profilepic.jpg' and 'img/pizzeria.jpg'.
+- Applied 'async' to script tag which links to a minified .js file.
+- Applied minified css, inline, to the top 'style' tag.
+- Applied 'media="print"' to the link to the print-specific css file.
+
+### views/js/main.js
+- For 'changePizzaSizes()' and 'updatePositions()', moved all variable declarations and most calculations out of the 'for' loops.  
+- Established 'items' and 'leftPosArray' has global variables so that they could be updated at the initial page load instead of each time 'updatePositions()' is called.  
+- The array 'leftPosArray' is a list of all the initial 'elem.basicLeft' values.
 
 ## Using Grunt during development
 *Currently the Gruntfile is configured to affect only the css and js files in the 'views' folder.*
